@@ -558,3 +558,4 @@ build/tmp/sourcesJar/MANIFEST.MF
 gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 plan.md
+RELEASE_NOTES.md
