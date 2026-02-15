@@ -17,8 +17,8 @@ A powerful, data-driven RPG framework for Minecraft (Fabric) that enables easy c
 - **Fabric Loader**: 0.16.7 or higher
 - **Java**: 21 or higher
 - **Dependencies**:
-  - Fabric API
-  - Cardinal Components API (for mana/stats)
+  - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
+  - [Cardinal Components API](https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api) (for mana/stats)
 
 ## Installation
 
