@@ -1,0 +1,15 @@
+{
+    "id": "test_staff",
+    "type": "stick",
+    "texture": "test_staff.png",
+    "abilities": {
+        "right_click": [
+            "mana_cost:10",
+            "projectile:fireball",
+            "cooldown:2"
+        ],
+        "on_hit": [
+            "ignite:3"
+        ]
+    }
+}

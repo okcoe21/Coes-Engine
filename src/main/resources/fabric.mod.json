@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "coes-engine",
+    "version": "${version}",
+    "name": "Coes Engine",
+    "description": "A data-driven RPG framework for custom weapons, abilities, and spells.",
+    "authors": [
+        "okcoe"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/coes-engine/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "me.okcoe.rpg.RPGMod"
+        ],
+        "cardinal-components": [
+            "me.okcoe.rpg.component.RPGComponents"
+        ]
+    },
+    "mixins": [
+        "coes-engine.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.7",
+        "minecraft": "~1.21.1",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
