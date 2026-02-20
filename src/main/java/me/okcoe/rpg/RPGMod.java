@@ -60,8 +60,6 @@ public class RPGMod implements ModInitializer {
             ResourcePackGenerator.generate();
             GeyserMappingGenerator.generate();
 
-            // Register commands
-            RPGCommands.register();
             LOGGER.info("Initialization complete.");
         } catch (Throwable t) {
             LOGGER.error("CRITICAL ERROR DURING INITIALIZATION", t);

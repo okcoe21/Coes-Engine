@@ -5,8 +5,9 @@ import me.okcoe.rpg.RPGMod;
 import me.okcoe.rpg.data.WeaponDefinition;
 import me.okcoe.rpg.data.WeaponLoader;
 import me.okcoe.rpg.geyser.GeyserMappingGenerator;
+import me.okcoe.rpg.geyser.GeyserMappingGenerator;
 import me.okcoe.rpg.resourcepack.ResourcePackGenerator;
-import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -17,9 +18,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class RPGCommands {
-    public static void register() {
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            dispatcher.register(CommandManager.literal("rpg")
+    public static void register(com.mojang.brigadier.CommandDispatcher<net.minecraft.server.command.ServerCommandSource> dispatcher, CommandRegistryAccess registryAccess, CommandManager.RegistrationEnvironment environment) {
+        dispatcher.register(CommandManager.literal("rpg")
                     .requires(source -> {
                         if (source.getEntity() == null) return true;
                         if (source.getEntity() instanceof ServerPlayerEntity player) {
@@ -88,6 +88,5 @@ public class RPGCommands {
                                                 context.getSource().sendFeedback(() -> Text.literal(player.getName().getString() + " has " + mana + " mana"), false);
                                                 return 1;
                                             }))))));
-        });
     }
 }

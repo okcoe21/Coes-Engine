@@ -17,14 +17,13 @@ A powerful, data-driven RPG framework for Minecraft (Fabric) that enables easy c
 - **Fabric Loader**: 0.16.7 or higher
 - **Java**: 21 or higher
 - **Dependencies**:
-  - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
   - [Cardinal Components API](https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api) (for mana/stats)
 
 ## Installation
 
 1. Download the latest release from the [Releases](../../releases) page
 2. Place `coes-engine-*.jar` in your `mods` folder
-3. Install required dependencies (Fabric API, Cardinal Components API)
+3. Install required dependencies (Cardinal Components API)
 4. Start your server/client
 5. Find auto-generated resource packs in `generated/` folder
 
